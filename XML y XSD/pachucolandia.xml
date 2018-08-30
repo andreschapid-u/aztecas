@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<pachucolandia>
+	<habitante nombre="wachiberto" edad="20" sexo="Masculino">
+        <extremidades tipo="superior" cantidad="8"/>
+        <extremidades tipo="inferior" cantidad="4"/>
+        <profesion>cargador de estiercol</profesion>
+        <ocupacion nombre_empresa="pachucolandia_S.A">contador publico</ocupacion>
+        <vestimenta>
+            <camisa color="azul"/>
+            <pantalon color="gris"/>
+        </vestimenta>
+        
+        <lista>
+            <producto precio="200" nombre="arrozelto" fecha_caducidad="01/12/2015"/>
+            <producto precio="500" nombre="albergulina" fecha_caducidad="25/08/2016"/>
+            <producto precio="300" nombre="pollilo" fecha_caducidad="15/01/2010"/>
+        </lista>
+        
+        <pareja nombre="wachiberta"/>
+        <cita acopañante="wachiberta">
+            <cine nombre="pachucoplaza">
+				<pelicula>pachucotanic</pelicula>
+			</cine>
+            <restaurante nombre="empanada de pachuco">
+                <menu>empanadas</menu>
+            </restaurante>
+        </cita>
+    </habitante>
+    
+    <empresa nombre="pachucolandia_S.A" direccion="calle 11A numero 23-45">
+		<gerente nombre="gerenberto" edad="30" sexo="Masculino"/>
+        <presupuesto cantidad="100000" tipo="pachudolars"/>
+        <proposito>recoleccion de resortes</proposito>
+    </empresa>
+</pachucolandia>

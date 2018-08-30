@@ -1,0 +1,2 @@
+El archivo pachucolandia.xml fue validado con el archivo pachucolandiaEsquema.xds por medio del 
+plugin de Notepad++ de validacion y la pagina web online https://www.freeformatter.com/xml-validator-xsd.html

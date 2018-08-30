@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema elementFormDefault="qualified"
+    xmlns="http://tempuri.org/XMLSchema.xsd"    
+    xmlns:mstns="http://tempuri.org/XMLSchema.xsd"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+>
+  <xs:element name="pachucolandia">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="habitante">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="extremidades" maxOccurs="unbounded" minOccurs="0">
+                <xs:complexType>
+                  <xs:attribute type="xs:string" name="tipo"/>
+                  <xs:attribute type="xs:byte" name="cantidad"/>
+                </xs:complexType>
+              </xs:element>
+              <xs:element type="xs:string" name="profesion"/>
+              <xs:element name="ocupacion">
+                <xs:complexType>
+                  <xs:simpleContent>
+                    <xs:extension base="xs:string">
+                      <xs:attribute type="xs:string" name="nombre_empresa"/>
+                    </xs:extension>
+                  </xs:simpleContent>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="vestimenta">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="camisa">
+                      <xs:complexType>
+                        <xs:attribute type="xs:string" name="color"/>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element name="pantalon">
+                      <xs:complexType>
+                        <xs:attribute type="xs:string" name="color"/>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="lista">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="producto" maxOccurs="unbounded" minOccurs="0">
+                      <xs:complexType>
+                        <xs:attribute type="xs:short" name="precio"/>
+                        <xs:attribute type="xs:string" name="nombre"/>
+                        <xs:attribute type="xs:string" name="fecha_caducidad"/>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="pareja">
+                <xs:complexType>
+                  <xs:attribute type="xs:string" name="nombre"/>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="cita">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="cine">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element type="xs:string" name="pelicula"/>
+                        </xs:sequence>
+                        <xs:attribute type="xs:string" name="nombre"/>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element name="restaurante">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element type="xs:string" name="menu"/>
+                        </xs:sequence>
+                        <xs:attribute type="xs:string" name="nombre"/>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                  <xs:attribute type="xs:string" name="acopañante"/>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+            <xs:attribute type="xs:string" name="nombre"/>
+            <xs:attribute type="xs:byte" name="edad"/>
+            <xs:attribute type="xs:string" name="sexo"/>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="empresa">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="gerente">
+                <xs:complexType>
+                  <xs:attribute type="xs:string" name="nombre"/>
+                  <xs:attribute type="xs:byte" name="edad"/>
+                  <xs:attribute type="xs:string" name="sexo"/>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="presupuesto">
+                <xs:complexType>
+                  <xs:attribute type="xs:int" name="cantidad"/>
+                  <xs:attribute type="xs:string" name="tipo"/>
+                </xs:complexType>
+              </xs:element>
+              <xs:element type="xs:string" name="proposito"/>
+            </xs:sequence>
+            <xs:attribute type="xs:string" name="nombre"/>
+            <xs:attribute type="xs:string" name="direccion"/>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
