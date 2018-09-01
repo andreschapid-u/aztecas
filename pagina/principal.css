@@ -1,0 +1,104 @@
+:root {
+    --bg-principal: #e1e8af;
+    --bg-edinson: #61bcb0;
+    --bg-luisa: #5678c1;
+    --bg-carlos: #e74d7f;
+    --bg-sandra: #a30581;
+    --bg-contacto: #350505;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+section>div {
+    height: 700px;
+    margin: auto;
+    padding: 3%;
+}
+
+.edinson {
+    background-color: var(--bg-edinson);
+}
+
+.luisa {
+    background-color: var(--bg-luisa);
+}
+
+.carlos {
+    background-color: var(--bg-carlos);
+}
+
+.sandra {
+    background-color: var(--bg-sandra);
+}
+
+.contacto {
+    background-color: var(--bg-contacto);
+}
+
+nav ul {
+    display: block;
+    margin: auto;
+}
+
+nav ul li {
+    /* display: block; */
+    margin: 5px 0px;
+    /* width: 100px;
+    padding: 10px 20px;
+    height: 50px;
+    align-content: center;
+    border-radius: 0px 100px 0px 0px; */
+}
+
+nav ul li a {
+    display: block;
+    width: 100px;
+    padding: 10px 20px;
+    height: 50px;
+    align-content: center;
+    border-radius: 0px 100px 0px 0px;
+    text-decoration: none;
+    color: white;
+    text-shadow: 0px -2px 14px #FF7A00, 0px -4px 14px #FF6300, 0px -8px 14px #FF4400;
+    font-size: 1.5rem;
+}
+
+nav ul li a:hover {
+    text-shadow: 0px -4px 14px #FF7A00, 0px -7px 14px #FF6300, 0px -12px 14px #FF4400;
+}
+
+nav ul .principal {
+    background-color: transparent !important;
+    height: 120px !important;
+    width: 120px !important;
+    margin: 10px !important;
+    padding: 1px;
+    border-radius: 50%;
+    /* box-shadow: 0px 00px 10px 5px #000, 0px 00px 10px 9px yellow; */
+    background-image: url("https://files.classcraft.com/classcraft-assets/teams/crests/TeamLogo_3.png");
+    background-size: cover;
+}
+
+nav {
+    position: fixed;
+    top: 50px;
+    left: 0px;
+    z-index: 2000;
+}
+
+body {
+    margin-left: 130px;
+}
+
+section>div>div {
+    width: 100%;
+    height: 100%;
+    background-color: #00000065;
+}
+
+.principal {
+    background-color: var(--bg-principal);
+}
