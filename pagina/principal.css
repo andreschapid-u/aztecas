@@ -1,10 +1,16 @@
 :root {
-    --bg-principal: #e1e8af;
+    /* --bg-principal: #e1e8af;
     --bg-edinson: #61bcb0;
     --bg-luisa: #5678c1;
     --bg-carlos: #e74d7f;
     --bg-sandra: #a30581;
-    --bg-contacto: #350505;
+    --bg-contacto: #350505; */
+    --bg-principal: #232702;
+    --bg-edinson: #002b25;
+    --bg-luisa: #001238;
+    --bg-carlos: #3b0113;
+    --bg-sandra: #3d0030;
+    --bg-contacto: #310000;
 }
 
 * {
@@ -59,7 +65,7 @@ nav ul li a {
     padding: 10px 20px;
     height: 50px;
     align-content: center;
-    border-radius: 0px 100px 0px 0px;
+    border-radius: 0px 50px 50px 0px;
     text-decoration: none;
     color: white;
     text-shadow: 0px -2px 14px #FF7A00, 0px -4px 14px #FF6300, 0px -8px 14px #FF4400;
@@ -91,6 +97,7 @@ nav {
 
 body {
     margin-left: 130px;
+    background-color: #141212;
 }
 
 section>div>div {
@@ -101,4 +108,23 @@ section>div>div {
 
 .principal {
     background-color: var(--bg-principal);
+}
+
+.table {
+    width: 100%;
+}
+
+#contacto {
+    padding: 2% 20%;
+    color: #FF7A00;
+}
+
+td input[type=text],
+input[type=email] {
+    width: 100%;
+    height: 20px;
+}
+
+#contacto table {
+    padding: 20px 50px;
 }
