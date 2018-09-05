@@ -1,0 +1,36 @@
+{
+    "Nombre Tribu": "Equipo Azteca",
+    "logo": "https://files.classcraft.com/classcraft-assets/teams/crests/TeamLogo_3.png",
+    "Miembros": [{
+            "Nombre": "Luisa Fernanda Gomez",
+            "Url foto": "https://files.classcraft.com/classcraft-assets/teams/crests/TeamLogo_3.png",
+            "Gustos": [
+                "Bailar",
+                "Pasear",
+                "Comer"
+            ],
+            "Frase Celebre": "Rendirse jamas!"
+        },
+        {
+            "Nombre": "Sandra Pisamina",
+            "Url foto": "https://files.classcraft.com/classcraft-assets/teams/crests/TeamLogo_3.png",
+            "Gustos": [
+                "Bailar",
+                "Pasear",
+                "Dormir"
+            ],
+            "Frase Celebre": "La felicidad depende de uno mismo"
+        },
+        {
+            "Nombre": "Carlos Andres Chapid",
+            "Url foto": "https://files.classcraft.com/classcraft-assets/teams/crests/TeamLogo_3.png",
+            "Gustos": [
+                "Dormir",
+                "Jugar",
+                "Comer"
+            ],
+            "Frase Celebre": "Di que sabemmos hacerlo, luego investigamos como se hace!"
+        }
+    ]
+
+}

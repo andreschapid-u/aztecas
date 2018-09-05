@@ -13,6 +13,8 @@
     --bg-contacto: #310000;
     --color-texto: #FF7A00;
     --width-inline: 90%;
+    --bg-black-tran: #00000065;
+    --color-black: #000000f8;
 }
 
 @media screen and (min-width: 64em) {
@@ -34,7 +36,7 @@ footer {
     padding: 10px;
     text-align: center;
     width: 100%;
-    background-color: #050505e1;
+    background-color: var(--color-black);
 }
 
 html,
@@ -42,6 +44,10 @@ body,
 section {
     height: 100%;
     width: 100%;
+}
+
+body {
+    min-width: 600px;
 }
 
 section>div {
@@ -64,11 +70,22 @@ section>div {
     background-color: var(--bg-sandra);
 }
 
-.contacto {
+.principal {
+    background-color: var(--bg-principal);
+}
+
+.contacto,
+.sandra,
+.carlos,
+.luisa,
+.edinson,
+.principal {
     background-color: var(--bg-contacto);
 }
 
 nav {
+    background-color: var(--color-black);
+    width: 100%;
     position: fixed;
     top: 0px;
     left: 0px;
@@ -91,7 +108,6 @@ nav ul li a {
     padding: 10px 20px;
     /* border-radius: 0px 0px 50px 50px; */
     text-decoration: none;
-    color: var(--color-texto);
     text-shadow: 0px -2px 14px #FF7A00, 0px -4px 14px #FF6300, 0px -8px 14px #FF4400;
     font-size: 1.5rem;
 }
@@ -122,20 +138,23 @@ section>div {
 section>div>div {
     min-height: 85%;
     height: 85%;
-    background-color: #00000065;
-    box-shadow: 0px -4px 14px var(--color-texto) inset;
+    background-color: var(--bg-black-tran);
+    box-shadow: -4px -4px 14px var(--color-texto) inset;
 }
 
-.principal {
-    background-color: var(--bg-principal);
+.opcion {
+    background-color: transparent;
+    /* box-shadow: 0px 0px 14px var(--color-texto) inset; */
+}
+
+ul {
+    display: block;
+    width: 100%;
+    background-color: var(--bg-black-tran);
 }
 
 .table {
     width: 100%;
-}
-
-#contacto {
-    color: var(--color-texto);
 }
 
 input[type=text],
@@ -156,14 +175,21 @@ textarea {
 }
 
 input[type=button] {
+    display: block;
+    margin: auto;
     height: 30px;
-    padding: 0px 40px !important;
+    padding: 0px 20px !important;
 }
 
 td input[type=checkbox] {
     width: 20px;
     height: 20px;
     border-radius: 50%;
+}
+
+#contacto>div>div {
+    width: 50%;
+    margin: auto;
 }
 
 #contacto table {
