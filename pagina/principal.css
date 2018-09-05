@@ -223,3 +223,9 @@ div {
     align-items: center;
     align-content: center;
 }
+
+.redes{
+	display: inline-block;
+	white : 40px;
+	height : 40px;
+}
