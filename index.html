@@ -115,7 +115,7 @@
                             <p>Edad: 26 años </p>
                             <p>Correo: carloschapid@unicauca.edu.co </p>
                             <p>Redes Sociales </p>
-                            <a class="redes" href="https://www.facebook.com/anchoch"><img src="./pagina/facebook.png" alt=""></a>
+                            <a target="_OC_Page" class="redes" href="https://www.facebook.com/anchoch"><img src="./pagina/facebook.png" alt=""></a>
                         </div>
                     </div>
 
@@ -203,9 +203,48 @@
                                 <td><input type="email" name="correo" id="correo" width="100%" placeholder="correo@ejemplo.com"></td>
                             </tr>
                             <tr>
-                                <td><label for="mensaje">Mensaje</label></td>
+                                <td><label for="genero">Genero</label></td>
                                 <td>
-                                    <textarea name="mensaje" id="mensaje" cols="30" rows="10" placeholder="Mensaje..."></textarea>
+                                    <label>
+                                        <input type="radio" name="genero" id="" value="Maculino">Masculino
+                                    </label>
+                                    <br>
+                                    <label>
+                                        <input type="radio" name="genero" id="" value="Femenino">Femenino
+                                    </label>
+
+                                </td>
+                            </tr>
+                            <tr>
+
+                                <td><label for="pais">País</label></td>
+                                <td>
+                                    <select name="pais" id="pais">
+                                        <option value="co">Colombia</option>
+                                        <option value="br">Brasil</option>
+                                        <option value="ar">Argentina</option>
+                                        <option value="pe">Perú</option>
+
+                                    </select>
+                                </td>
+                            </tr>
+                            <tr>
+
+                                <td><label for="ciudad">Ciudad</label></td>
+                                <td>
+                                    <select name="ciudad" id="ciudad">
+                                        <option value="1">Bogotá</option>
+                                        <option value="2">Cali</option>
+                                        <option value="3">Pereira</option>
+                                        <option value="4">Popayán</option>
+
+                                    </select>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><label for="mensaje">Sugerencias</label></td>
+                                <td>
+                                    <textarea name="mensaje" id="mensaje" cols="30" rows="10" placeholder="Sugerencias..."></textarea>
                                 </td>
                             </tr>
                             <tr>
