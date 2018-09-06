@@ -4,13 +4,13 @@
     --bg-luisa: #5678c1;
     --bg-carlos: #e74d7f;
     --bg-sandra: #a30581;
-    --bg-contacto: #350505; */
+    --bg-sugerencia: #350505; */
     --bg-principal: #232702;
     --bg-edinson: #002b25;
     --bg-luisa: #001238;
     --bg-carlos: #3b0113;
     --bg-sandra: #3d0030;
-    --bg-contacto: #310000;
+    --bg-sugerencia: #310000;
     --color-texto: #FF7A00;
     --width-inline: 90%;
     --bg-black-tran: #00000065;
@@ -39,21 +39,17 @@ footer {
     background-color: var(--color-black);
 }
 
-html,
+/* html,
 body,
 section {
     height: 100%;
     width: 100%;
-}
-
-body {
-    min-width: 600px;
-}
+} */
 
 section>div {
     min-height: 100%
 }
-
+/* 
 .edinson {
     background-color: var(--bg-edinson);
 }
@@ -72,15 +68,16 @@ section>div {
 
 .principal {
     background-color: var(--bg-principal);
-}
+} */
 
-.contacto,
+.sugerencia,
 .sandra,
 .carlos,
 .luisa,
 .edinson,
+.karen,
 .principal {
-    background-color: var(--bg-contacto);
+    background-color: var(--bg-sugerencia);
 }
 
 nav {
@@ -136,7 +133,7 @@ section>div {
 }
 
 section>div>div {
-    min-height: 85%;
+    /* min-height: 85%; */
     height: 85%;
     background-color: var(--bg-black-tran);
     box-shadow: -4px -4px 14px var(--color-texto) inset;
@@ -187,16 +184,16 @@ td input[type=checkbox] {
     border-radius: 50%;
 }
 
-#contacto>div>div {
+#sugerencia>div>div {
     width: 50%;
     margin: auto;
 }
 
-#contacto table {
+#sugerencia table {
     padding: 20px 50px;
 }
 
-#contacto table h1 {
+#sugerencia table h1 {
     text-shadow: 0px -2px 14px #FF7A00, 0px -4px 14px #FF6300, 0px -8px 14px #FF4400;
 }
 
@@ -209,9 +206,13 @@ div {
     width: var(--width-inline);
 }
 
-.div-inline img {
-    height: 160px;
+.personaje {
+    height: 260px;
 }
+.libro{
+    height: 120px;
+}
+
 
 #form {
     width: 100%;
@@ -227,4 +228,14 @@ div {
 .redes >img{
     width: 50px;
     height: 50px;
+}
+
+.bloque{
+    display: inline-block;
+    padding:0;
+}
+
+iframe{
+    width: 100%;
+    height: 315px;
 }
