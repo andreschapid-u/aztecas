@@ -269,6 +269,11 @@ div {
 }
 
 .bloque {
+  display: inline-block;
+  padding: 0;
+}
+
+.bloqueE {
   display: block;
   padding: 0;
 }
