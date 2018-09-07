@@ -291,3 +291,11 @@ audio {
 	width: 100%; 
 	height: 70px; 
 } 
+
+#mensaje {
+	text-align: center;
+}
+
+#frase {
+	text-align: right;
+}
