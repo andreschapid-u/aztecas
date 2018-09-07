@@ -292,10 +292,10 @@ audio {
 	height: 70px; 
 } 
 
-#mensaje {
+.mensaje {
 	text-align: center;
 }
 
-#frase {
+.frase {
 	text-align: right;
 }
