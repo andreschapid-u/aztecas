@@ -11,6 +11,9 @@
 </head>
 
 <body>
+    <div id="loader">
+
+    </div>
     <nav>
         <ul>
             <li>
@@ -401,15 +404,19 @@
         <small>Equipo AZTECA &copy; 2018</small>
     </footer>
     <script>
-        var a = document.getElementsByTagName("a");
-        for (var item of a) {
-            if (!item.classList.contains("opcion")) {
-                item.addEventListener('click', function (event) {
-                    event.preventDefault();
-                    return !window.open(this.href);
-                });
+        window.onload = function () {
+            var a = document.getElementsByTagName("a");
+            for (var item of a) {
+                if (!item.classList.contains("opcion")) {
+                    item.addEventListener('click', function (event) {
+                        event.preventDefault();
+                        return !window.open(this.href);
+                    });
+                }
             }
-        }
+            document.getElementById("loader").style.display = "none";
+        };
+
 
     </script>
 </body>
