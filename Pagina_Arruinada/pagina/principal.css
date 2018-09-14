@@ -1,0 +1,351 @@
+:root {
+  /* --bg-principal: #e1e8af;
+    --bg-edinson: #61bcb0;
+    --bg-luisa: #5678c1;
+    --bg-carlos: #e74d7f;
+    --bg-sandra: #a30581;
+    --bg-sugerencia: #350505; */
+  --bg-principal: #232702;
+  --bg-edinson: #002b25;
+  --bg-luisa: #001238;
+  --bg-carlos: #3b0113;
+  --bg-sandra: #3d0030;
+  --bg-sugerencia: #310000;
+  --color-texto: #ff7a00;
+  --width-inline: 90%;
+  --bg-black-tran: #00000065;
+  --color-black: #000000f8;
+
+  --menu-padding: 10px 20px;
+  --menu-font: 1.5rem;
+}
+
+@import url("http://fonts.googleapis.com/css?family=Droid+Sans");
+@import url("https://fonts.googleapis.com/css?family=Rock+Salt");
+
+@media screen and (min-width: 48em) {
+  :root {
+    --menu-padding: 10px 20px;
+    --menu-font: 1.5rem;
+    --width-inline: 40%;
+  }
+}
+
+* {
+  /* font-family: 'Droid Sans' serif; */
+  font-family: "Rock Salt", serif;
+  margin: 0px;
+  padding: 0px;
+  color: var(--color-texto);
+}
+
+footer {
+  position: fixed;
+  bottom: 0px;
+  z-index: 2000;
+  padding: 10px;
+  text-align: center;
+  width: 100%;
+  background-color: var(--color-black);
+}
+
+/* html,
+body,
+section {
+    height: 100%;
+    width: 100%;
+} */
+
+section > div {
+  min-height: 100%;
+}
+/* 
+.edinson {
+    background-color: var(--bg-edinson);
+}
+
+.luisa {
+    background-color: var(--bg-luisa);
+}
+
+.carlos {
+    background-color: var(--bg-carlos);
+}
+
+.sandra {
+    background-color: var(--bg-sandra);
+}
+
+.principal {
+    background-color: var(--bg-principal);
+} */
+
+.sugerencia,
+.sandra,
+.carlos,
+.luisa,
+.edinson,
+.karen,
+.principal {
+  background-color: var(--bg-sugerencia);
+}
+
+.rosa {
+  background-color: fuchsia;
+}
+
+nav {
+  background-color: var(--color-black);
+  width: 100%;
+  padding: 2px 50px;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  z-index: 2000;
+}
+
+/* nav ul {
+    display: inline-flex;
+} */
+
+nav ul {
+  margin: 0;
+  list-style: none;
+  padding: 0;
+  display: inline-flex;
+}
+
+/* nav ul li {
+    display: inline-block;
+    margin: 0px 5px;
+} */
+nav ul li {
+  text-align: center;
+  flex-grow: 1;
+}
+
+/* nav ul li a {
+    display: inline-block;
+    height: 40px !important;
+    width: 120px !important;
+    padding: 10px 20px;
+    text-decoration: none;
+    text-shadow: 0px -2px 14px #FF7A00, 0px -4px 14px #FF6300, 0px -8px 14px #FF4400;
+    font-size: 1.5rem;
+} */
+
+nav ul li a {
+  display: block;
+  padding: var(--menu-padding);
+  /* border-radius: 0px 0px 50px 50px; */
+  text-decoration: none;
+  text-shadow: 0px -2px 14px #ff7a00, 0px -4px 14px #ff6300,
+    0px -8px 14px #ff4400;
+  font-size: var(--menu-font);
+}
+
+.link:hover {
+  /* text-shadow: 0px -4px 14px #FF7A00, 0px -7px 14px #FF6300, 0px -12px 14px #FF4400; */
+  /* border-bottom: 5px solid  #FF7A00; */
+  /* box-shadow: -4px -4px 14px var(--color-texto) inset; */
+
+  text-shadow: 0px -4px 14px #ff7a00, 0px -7px 14px #ff6300,
+    0px -12px 14px #ff4400;
+  /* border-bottom: 5px solid #FF7A00; */
+  box-shadow: 0px 0px 19px 1px var(--color-texto);
+  border-radius: 30px;
+}
+
+ul {
+  display: block;
+  width: 70%;
+  background-color: var(--bg-black-tran);
+}
+
+nav ul .principal {
+  background-color: transparent !important;
+  flex-grow: 1;
+  padding-right: 100px;
+  border-bottom: 0px var(--color-black) !important;
+  /* padding: 1px; */
+  /* border-radius: 50%; */
+  /* background-image: url("https://files.classcraft.com/classcraft-assets/teams/crests/TeamLogo_3.png"); */
+  /* background-size: cover; */
+  /* box-shadow: 0px 00px 10px 5px #000, 0px 00px 10px 9px yellow; */
+}
+
+nav ul li a img {
+  left: 30px;
+  position: fixed;
+  width: 120px;
+  height: 120px;
+}
+
+section > div {
+  padding: 70px 30px 30px 30px !important;
+}
+
+section > div > div {
+  /* min-height: 85%; */
+  height: 85%;
+  background-color: var(--bg-black-tran);
+  box-shadow: -4px -4px 14px var(--color-texto) inset;
+}
+
+.opcion {
+  background-color: transparent;
+  /* box-shadow: 0px 0px 14px var(--color-texto) inset; */
+}
+
+.table {
+  width: 100%;
+}
+select,
+input[type="text"],
+input[type="email"],
+input[type="button"],
+textarea {
+  min-width: 300px;
+  max-width: 300px;
+  padding: 3px 15px;
+  height: 30px;
+  border-radius: 10px;
+  background-color: rgba(12, 0, 0, 0.911);
+  border: 1px solid var(--color-texto);
+}
+
+textarea {
+  min-height: 100px;
+}
+
+input[type="button"] {
+  display: block;
+  margin: auto;
+  height: 30px;
+  padding: 0px 20px !important;
+}
+
+td input[type="checkbox"] {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+}
+
+#sugerencia > div > div {
+  width: 50%;
+  margin: auto;
+}
+
+#sugerencia table {
+  padding: 20px 50px;
+}
+
+#sugerencia table h1 {
+  text-shadow: 0px -2px 14px #ff7a00, 0px -4px 14px #ff6300,
+    0px -8px 14px #ff4400;
+}
+
+div {
+  padding: 30px;
+}
+
+.div-inline {
+  display: inline-block;
+  width: var(--width-inline);
+  padding: 0px 20px;
+  margin: 2px;
+}
+
+.personaje {
+  height: 260px;
+}
+.libro {
+  height: 120px;
+}
+
+#form {
+  width: 100%;
+  margin: auto;
+  align-items: center;
+}
+
+.center {
+  align-items: center;
+  align-content: center;
+}
+
+.redes > img {
+  width: 50px;
+  height: 50px;
+}
+
+.bloque {
+  display: inline-block;
+  padding: 0;
+  margin: 0px;
+}
+
+.bloqueE {
+  display: block;
+  padding: 0;
+}
+
+iframe {
+  width: 100%;
+  height: 315px;
+  border: 0px;
+}
+
+td {
+  padding: 3px;
+}
+
+audio {
+  width: 100%;
+  height: 70px;
+}
+
+#mensaje {
+  text-align: center;
+}
+
+#frase {
+  text-align: right;
+}
+
+.gustos {
+  text-shadow: 0px -2px 14px #ff7a00, 0px -4px 14px #ff6300,
+    0px -8px 14px #ff4400;
+}
+
+#loader {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  z-index: 2000000000;
+
+  background-image: url(./logo.png);
+  background-position: center;
+  background-size: 200px 200px;
+  background-repeat: no-repeat;
+
+  /* animation-name: girar;
+  -o-animation-name: girar;
+  animation-duration: 3s;
+  animation-iteration-count: infinite; */
+  -webkit-animation: girar 2s infinite; /* Safari 4.0 - 8.0 */
+    animation: girar 2s infinite;
+}
+
+@keyframes girar {
+  0% {
+    background-size: 200px 200px;
+  }
+  50% {
+    background-size: 180px 180px;
+  }
+  100% {
+    background-size: 200px 200px;
+  }
+}

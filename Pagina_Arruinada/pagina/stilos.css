@@ -1,0 +1,55 @@
+:root {
+    --color-purple: rgba(128, 0, 128, 0.63);
+}
+
+.tarjeta {
+    width: 400px;
+    height: 267px;
+    /* width: 520px;
+    height: 348px; */
+    margin: auto;
+    background-image: url(Imperio-Azteca.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    border-radius: 20px;
+}
+
+.equipo {
+    text-align: center;
+    font-size: 2.3em;
+    text-shadow: 0px 0px 8px var(--color-purple);
+}
+
+body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    /* background-color: #363131; */
+    background-color: transparent;
+    
+    text-shadow: 2px 2px 6px #000000;
+}
+
+.bloque {
+    display: inline-block;
+}
+
+.bq-1 {
+    width: 65%;
+    margin: 5px;
+    background-color: var(--color-purple);
+    box-shadow: 2px 2px 2px 6px var(--color-purple);
+}
+
+.bq-2 {
+    width: 30%;
+}
+
+.logo {
+    width: 100px;
+    border-radius: 50%;
+    box-shadow: 2px 2px 2px 6px var(--color-purple);
+}
+
+li {
+    font-size: 1rem;
+    color: #ffffff;
+}
